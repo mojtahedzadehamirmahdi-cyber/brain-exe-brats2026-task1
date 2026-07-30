@@ -216,3 +216,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+.Rhistory
+.RData
+.DS_Store
+model/
+models/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.nii
+*.nii.gz
+*.npz
+*.pkl
+*.token

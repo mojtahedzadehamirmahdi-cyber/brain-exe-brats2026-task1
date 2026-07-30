@@ -1,0 +1,42 @@
+{
+  "dataset_name": "Dataset702_BrainEXE_METS2026_REGIONS",
+  "channel_names": {
+    "0": "T1C",
+    "1": "T1N",
+    "2": "T2F",
+    "3": "T2W"
+  },
+  "reference_labels": {
+    "background": 0,
+    "nonenhancing_tumor_core": 1,
+    "surrounding_nonenhancing_flair_hyperintensity": 2,
+    "enhancing_tumor": 3,
+    "resection_cavity": 4
+  },
+  "training_regions": {
+    "whole_tumor": [
+      1,
+      2,
+      3
+    ],
+    "tumor_core": [
+      1,
+      3
+    ],
+    "enhancing_tumor": [
+      3
+    ],
+    "resection_cavity": [
+      4
+    ]
+  },
+  "regions_class_order": [
+    2,
+    1,
+    3,
+    4
+  ],
+  "number_of_training_cases": 1295,
+  "number_of_official_validation_cases": 179,
+  "file_ending": ".nii.gz"
+}

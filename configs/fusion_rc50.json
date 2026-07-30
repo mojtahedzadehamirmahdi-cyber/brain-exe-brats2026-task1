@@ -1,0 +1,39 @@
+{
+  "selection_name": "RC50_FINAL_FROZEN",
+  "dataset_name": "Dataset702_BrainEXE_METS2026_REGIONS",
+  "checkpoint": "checkpoint_final.pth",
+  "folds": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "configurations": {
+    "two_dimensional": "2d",
+    "three_dimensional": "3d_fullres"
+  },
+  "weights_3d": {
+    "whole_tumor": 0.65,
+    "tumor_core": 0.5,
+    "enhancing_tumor": 0.75,
+    "resection_cavity": 0.5
+  },
+  "weights_2d": {
+    "whole_tumor": 0.35,
+    "tumor_core": 0.5,
+    "enhancing_tumor": 0.25,
+    "resection_cavity": 0.5
+  },
+  "probability_threshold": 0.5,
+  "threshold_rule": "strictly_greater_than",
+  "regions_class_order": [
+    2,
+    1,
+    3,
+    4
+  ],
+  "test_time_augmentation": false,
+  "connected_component_postprocessing": false,
+  "number_of_checkpoints": 10
+}
